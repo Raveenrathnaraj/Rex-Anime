@@ -12,7 +12,7 @@ interface AnimeDataType {
   genres: string[],
 }
 
-const getAnimeList = async (page: number) => {
+export const getAnimeList = async (page: number) => {
   const resArray = await Promise.all(Array.from({length: 6}, (_, i) => {
     const p = (page * 5) + (i + 1);
     return fetch("https://gogoanime.consumet.stream/top-airing?page=" + p)
@@ -39,7 +39,7 @@ async function AnimePage() {
   const animeList = await getAnimeList(Number(page ?? 0));
 
   if (!animeList) {
-    return 'No Items'
+    return 'No Items';
   }
 
   return (

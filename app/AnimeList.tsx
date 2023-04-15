@@ -27,6 +27,7 @@ function AnimeList({
   useEffect(() => {
     window.addEventListener("beforeunload", () => removeCookie());
     return () => {
+      removeCookie();
       window.removeEventListener("beforeunload", () => removeCookie());
     };
   }, []);

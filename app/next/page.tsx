@@ -3,9 +3,15 @@ import InfiniteScroll from '../../public/Images/InfiniteScrollNext.png';
 import Image from 'next/image';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Next Js Infinite Scrolling',
+  description: "Learn how to implement infinite scrolling functionality on your Next.js app directory with our sample anime list application. Checkout step-by-step instructions, code repo, component Architecture to create Infinite scrolling functionality using the combination of server and client components.",
+  keywords: ['Next.js', 'Next.js 13', 'Next.js 13.3', 'app directory', 'server components', 'client components', 'infinite scrolling', 'frontend development']
+}
+
 function Next() {
   return (
-    <div className='flex flex-col justify-center items-center mt-10 px-2'>
+    <div className='flex flex-col justify-center items-center mt-6 px-2'>
       <div className='text-3xl'>
         Next Js 13.3
       </div>

@@ -4,9 +4,34 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Next Js Infinite Scrolling',
+  title: 'Next.Js 13 Infinite Scrolling Using App directory',
   description: "Learn how to implement infinite scrolling functionality on your Next.js app directory with our sample anime list application. Checkout step-by-step instructions, code repo, component Architecture to create Infinite scrolling functionality using the combination of server and client components.",
-  keywords: ['Next.js', 'Next.js 13', 'Next.js 13.3', 'app directory', 'server components', 'client components', 'infinite scrolling', 'frontend development']
+  keywords: ['Next.js', 'Next.js 13', 'Next.js 13.3', 'app directory', 'server components', 'client components', 'infinite scrolling', 'frontend development'],
+  openGraph: {
+    title: 'Next.Js 13 Infinite Scrolling Using App directory',
+    url: 'https://rex-anime.vercel.app/',
+    images: [
+      {
+        url: 'https://s1.zerochan.net/Rex.Salazar.600.542515.jpg',
+        width: 800,
+        height: 600,
+      },
+    ],
+    authors: ['Raveen'],
+    description: "Learn how to implement infinite scrolling functionality on your Next.js app directory with our sample anime list application. Checkout step-by-step instructions, code repo, component Architecture to create Infinite scrolling functionality using the combination of server and client components.",
+  },
+  twitter: {
+    title: 'Next.Js 13 Infinite Scrolling Using App directory',
+    images: [
+      {
+        url: 'https://s1.zerochan.net/Rex.Salazar.600.542515.jpg',
+        width: 800,
+        height: 600,
+      },
+    ],
+    creator: 'Raveen',
+    description: "Learn how to implement infinite scrolling functionality on your Next.js app directory with our sample anime list application. Checkout step-by-step instructions, code repo, component Architecture to create Infinite scrolling functionality using the combination of server and client components.",
+  },
 }
 
 function Next() {

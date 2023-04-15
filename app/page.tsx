@@ -1,7 +1,7 @@
 import Link from "next/link";
 import AnimeList from "./AnimeList";
 import AnimePage from "./AnimePage";
-import rightArrow from "../public/Images/rightArrow.png";
+import rightArrow from "../public/Images/right-arrow.png";
 import Image from "next/image";
 
 

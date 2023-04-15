@@ -2,6 +2,7 @@ import React from 'react';
 import InfiniteScroll from '../../public/Images/InfiniteScrollNext.png';
 import Image from 'next/image';
 import Link from 'next/link';
+import leftArrow from "../../public/Images/left-arrow.png";
 
 export const metadata = {
   title: 'Next.Js 13 Infinite Scrolling Using App directory',
@@ -40,9 +41,13 @@ function Next() {
       <div className='text-3xl'>
         Next Js 13.3
       </div>
-      <div className='mt-4 mb-10'>
+      <div className='mt-4'>
         This App was built using Next js 13.3 with App directory.
       </div>
+      <Link href={''} className='mt-4 mb-10'>
+        <Image src={leftArrow} alt='left Arrow' className='inline-block mr-2 w-4'/>
+        View App
+      </Link>
       <div className='w-5/6'>
         <p className='text-4xl '>Infinite Scroll</p>
         <div className='pl-5 text-lg'>

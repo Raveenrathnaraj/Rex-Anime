@@ -1,7 +1,8 @@
 import Navbar from './Navbar';
 import './globals.css';
-import {getAnimeList} from './AnimePage'
+import {getAnimeList} from './AnimePage';
 import {Metadata} from 'next';
+import {Analytics} from '@vercel/analytics/react';
 
 export async function generateMetadata(): Promise<Metadata> {
   const animeList = await getAnimeList(0);
@@ -52,6 +53,7 @@ export default function RootLayout({
         </header>
         <main>
           {children}
+          <Analytics />
         </main>
       </body>
     </html>

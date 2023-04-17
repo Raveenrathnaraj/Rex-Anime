@@ -16,7 +16,7 @@ export const vibeFont = localFont({
 
 function Navbar() {
   return (
-    <div className='flex py-4 px-2 sm:px-10 box-border w-full items-center justify-between bg-navbar bg-[#000000]'>
+    <div className='flex py-4 px-2 sm:px-10 box-border w-full items-center justify-between'>
       <div className='flex items-center'>
         <Link href={'/'}>
           <div className={`${vibeFont.variable} font-sans text-7xl`}>Rex</div>

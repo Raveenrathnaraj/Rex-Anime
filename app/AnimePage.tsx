@@ -59,13 +59,14 @@ const AnimeCard = ({
 }: AnimeDataType) => {
   return (
     <div className='max-w-xs w-full m-4 flex-shrink-0 rounded-xl border-white border-2'>
-      <Link href={animeUrl}><Image src={animeImg ?? ''} alt='Anime' width={240} height={240} className='w-full object-cover h-72 rounded-t-xl hover:ease-in hover:object-contain cursor-pointer' /></Link>
-      <div className='p-4 rounded-b-xl flex-col flex justify-between'>
-        <div className='text-lg font-semibold h-16'>{animeTitle?.slice(0, 35)}{animeTitle?.length > 35 && '...'}</div>
-        <div className='h-24'>
-          <div className='border-t-1 border-t mt-3 pt-3'><span className='text-green-300'>Genre:</span> {genres?.join(', ')}</div>
+      <Link href={animeUrl} target='_blank'><Image src={animeImg ?? ''} alt='Anime' width={240} height={240} className='w-full object-cover h-72 rounded-t-xl hover:ease-in hover:object-contain cursor-pointer' />
+        <div className='p-4 rounded-b-xl flex-col flex justify-between'>
+          <div className='text-lg font-semibold h-16'>{animeTitle?.slice(0, 35)}{animeTitle?.length > 35 && '...'}</div>
+          <div className='h-24'>
+            <div className='border-t-1 border-t mt-3 pt-3'><span className='text-green-300'>Genre:</span> {genres?.join(', ')}</div>
+          </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };

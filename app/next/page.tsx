@@ -64,7 +64,7 @@ function Next() {
           </ul>
         </div>
       </div>
-      <div className='mt-4'>The Github URL for this App is: <Link className='text-blue-600 text-lg' href={'https://github.com/Raveenrathnaraj'}>https://github.com/Raveenrathnaraj</Link></div>
+      <div className='mt-4'>The Github URL for this App is: <Link className='text-blue-600 text-lg' href={'https://github.com/Raveenrathnaraj/Rex-Anime'}>https://github.com/Raveenrathnaraj</Link></div>
       <div>For any queries, feel free to mail to <Link className='text-blue-600' href={'mailto:iraveenrathnaraj@gmail.com?subject=Rex anime queries'}>iraveenrathnaraj@gmail.com</Link></div>
         <div className='mt-8 mb-10'>The Architecture diagram for Infinite scroll flow is as below</div>
       <div>

@@ -4,6 +4,8 @@ import InfiniteScrollWrapper from './InfiniteScrollWrapper';
 import {useRouter} from 'next/navigation';
 import Cookies from 'js-cookie';
 import AnimeCardSkeleton from './AnimeCardSkeleton';
+import upArrow from "../public/Images/upArrow.svg";
+import Image from "next/image";
 
 function AnimeList({
   children,
@@ -52,6 +54,9 @@ function AnimeList({
           <div>No Results Found</div>
         </div> : animeList[animeList?.length - 1] !== 'No Items' && animeList?.length === cookiePage && <AnimeCardSkeleton />
       }
+      <div className="fixed bottom-5 right-0">
+        <Image src={upArrow} alt="Top" className="w-12 cursor-pointer" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}/>
+      </div>
     </Fragment>
   );
 }

@@ -7,8 +7,8 @@ import Image from "next/image";
 
 export default async function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center py-10 px-3">
-      <div className="flex justify-between w-full items-center md:flex-row flex-col mb-10 gap-6">
+    <main className="flex min-h-screen flex-col items-center py-5 px-2 sm:px-10">
+      <div className="flex justify-between w-full items-center flex-col mb-10 gap-6">
         <h1 className='text-5xl text-center'>Top Airing Anime</h1>
         <Link href={'/next'}>
           <span className="text-center">

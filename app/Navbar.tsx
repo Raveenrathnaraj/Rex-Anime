@@ -38,7 +38,7 @@ function Navbar() {
           <Image
             src={LinkedIn}
             alt= 'Seminal Logo'
-            className='h-10 object-cover w-auto mr-5'
+            className='h-10 object-cover w-auto'
           />
         </Link>
       </div>
